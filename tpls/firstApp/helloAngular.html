@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="ynApp">
+<head lang="en">
+    <meta charset="GB2312">
+    <title>helloAngular</title>
+    <link rel="stylesheet" href="../../css/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/ynstyle/firstapp.css"/>
+</head>
+<body ng-controller="helloAngularCtrl">
+<div class="container">
+    <div>
+        <input type="text" class="form-control" ng-model="greet.text">
+        <p class="lead">
+            {{greet.text}},Angular!
+        </p>
+    </div>
+    <hello>
+        <div>这里是原本的内容！</div>
+    </hello>
+    <div hello></div>
+    <div class="hello"></div>
+    <!-- directive:hello -->
+    <loader howToLoad="loadData()">滑动加载</loader>
+    <superman strength>力量</superman>
+    <superman strength speed>力量+速度</superman>
+    <superman strength speed ligth>力量+速度+光</superman>
+    <br>
+    <b>Ctrl</b>
+
+    <input type="text" class="form-control" ng-model="text"/>
+    <b>Directive</b>
+    <drink greet="text" double="text"></drink>
+    <drink2 first="{{text}}"></drink2>
+</div>
+<script src="../../framework/angular/angular.min.js"></script>
+<script src="../../framework/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="../../framework/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="../../js/apps/firstApp/app.js"></script>
+<script src="../../js/apps/firstApp/helloAngular.js"></script>
+</body>
+</html>

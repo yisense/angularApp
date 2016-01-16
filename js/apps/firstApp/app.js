@@ -2,11 +2,7 @@
  * Created by ANGULAR-X on 2016/1/15.
  */
 var myApp = angular.module('ynApp',[]);
-myApp.directive('hello',function() {
-    return {
-        restrict : 'E',
-        template : '<div>Hi everyone!</div>',
-        replace : true
-    }
-});
+//myApp.run(function($templateCache){
+//    $templateCache.put('hello.html','<div>hello hong hong</div>');
+//});
 

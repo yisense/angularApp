@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="formApp">
+<head lang="en">
+    <meta charset="GB2312">
+    <title>formAngular</title>
+    <link rel="stylesheet" href="../../css/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/ynstyle/firstapp.css"/>
+</head>
+<body ng-controller="testFormCtrl">
+<div class="container">
+    <form name="myForm" ng-submit="save()" novalidate>
+        <input name="name" type="text" ng-model="user.name" required/>
+        <input name="password" type="password" ng-model="user.password" required/>
+        <input type="submit" ng-disabled="myForm.$invalid">
+    </form>
+</div>
+<script src="../../framework/angular/angular.min.js"></script>
+<script src="../../framework/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="../../framework/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="../../framework/angular-validation/dist/angular-validation.min.js"></script>
+<script src="../../framework/angular-validation/dist/angular-validation-rule.min.js"></script>
+<script src="../../js/apps/firstApp/formAngular.js"></script>
+</body>
+</html>
